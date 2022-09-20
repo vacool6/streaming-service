@@ -12,7 +12,7 @@ app.get("/streamingservice", (req, res) => {
     res.status(400).send("No range in the headers!");
   }
 
-  const video = "opms1e12.mp4";
+  const video = "selectYourMP4";
   const vidSize = fs.statSync(video).size;
   const chunkSize = 10 ** 7; //10MB
   const start = Number(range.replace(/\D/g, ""));
