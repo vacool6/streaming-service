@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Video Streaming!</title>
+    <style>
+      body {
+        background-color: burlywood;
+        font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+          sans-serif;
+        text-align: center;
+      }
+      video {
+        width: 70%;
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <h1>Streaming service in NodeJS!</h1>
+      <video id="videoplayer" controls muted="muted" autoplay>
+        <source src="/streamingservice" type="video/mp4" />
+      </video>
+    </div>
+  </body>
+</html>
